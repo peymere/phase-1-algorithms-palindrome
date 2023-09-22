@@ -1,9 +1,31 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let counter = 0
+  let start = 0
+  let end = word.length - 1
+  while (start < end) {
+    console.log(++counter)
+    if (word[start] !== word[end]){
+      return false
+    }  
+    start++
+    end--
+  }
+  return true
 }
 
 /* 
   Add your pseudocode here
+  function isPalindrome(string):{
+
+    if (string is palindrome) {
+      if (letter at index x !== corresponding letter)
+      return false
+    }
+    else {
+      return true
+    }
+  }
 */
 
 /*
